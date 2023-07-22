@@ -1,5 +1,7 @@
 package collectionsframework.implementacoes.comparable;
 
+import java.util.Objects;
+
 public class StudentMarks implements Comparable<StudentMarks>{
 	private double matematica;
 	private double fisica;
@@ -59,5 +61,26 @@ public class StudentMarks implements Comparable<StudentMarks>{
 	@Override
 	public String toString() {
 		return "StudentMarks [matematica=" + matematica + ", fisica=" + fisica + ", poo=" + poo + "]";
+	}
+	
+	//override the equals and hashcode!
+	
+	@Override
+	public int hashCode() {
+		return Objects.hash(fisica, matematica, poo);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		StudentMarks other = (StudentMarks) obj;
+		return Double.doubleToLongBits(fisica) == Double.doubleToLongBits(other.fisica)
+				&& Double.doubleToLongBits(matematica) == Double.doubleToLongBits(other.matematica)
+				&& Double.doubleToLongBits(poo) == Double.doubleToLongBits(other.poo);
 	}
 }
