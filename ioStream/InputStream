@@ -1,0 +1,12 @@
+Input Stream Methods
+9 in java 1:
+public int avaible() throws IoException
+public void close() throws IoException
+public int read() throws IoException (abstract)
+public int read(byte[] b) throws IoException
+public int read(byte[] b, int offSet, int len) throws IoException
+public boolean markSupporter()
+public void mark(int readLimit)
+public void reset() throws IoExeption
+public long skip(long n) throws IoException
+3 in java 9:
