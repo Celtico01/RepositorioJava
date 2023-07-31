@@ -1,0 +1,9 @@
+Output Steeam Methods
+5 from java 1:
+public void write(byte[] b) throws IoException
+public void write(byte[] b, int off, int len) throws IoException
+public abstract void write(int b) throws IoException
+public void flush() throws IoException
+public void close() throws IoException
+1 from java 11:
+public static OutputStream nullOutputStream()

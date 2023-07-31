@@ -9,4 +9,9 @@ public boolean markSupporter()
 public void mark(int readLimit)
 public void reset() throws IoExeption
 public long skip(long n) throws IoException
-3 in java 9:
+3 from java 9:
+public byte[] readAllBytes() throws IoException
+public int readNBytes(byte[] b, int off, int len) throws IoException
+public long transferTo(OutputStream out) throws IoException
+1 from from java 11
+public static InputStream nullInputStream throws IoException
