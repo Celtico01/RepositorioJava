@@ -9,6 +9,24 @@ package ioStream.cods;
  * 6º handle FNFE and IoException
  */
 
+/*constructors fileoutputstram
+ * FileOutputStream(File file)
+Creates a file output stream to write to the file represented by the specified File object.
+
+FileOutputStream(FileDescriptor fdObj)
+Creates a file output stream to write to the specified file descriptor, 
+which represents an existing connection to an actual file in the file system.
+
+FileOutputStream(File file, boolean append)
+Creates a file output stream to write to the file represented by the specified File object.
+
+FileOutputStream(String name)
+Creates a file output stream to write to the file with the specified name.
+
+FileOutputStream(String name, boolean append)
+Creates a file output stream to write to the file with the specified name.
+ */
+
 import java.io.*; //1º step
 
 public class Writing {
