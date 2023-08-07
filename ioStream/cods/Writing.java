@@ -31,10 +31,15 @@ import java.io.*; //1º step
 
 public class Writing {
 	
-	public static void main(String[] args) {
-		//FileOutputStream outputStream = new FileOutputStream(); //2º step
+	public static void main(String[] args) throws FileNotFoundException, IOException{
+		String filePath = "C:\\Users\\alanm\\OneDrive\\Área de Trabalho\\Repositório Java\\src\\ioStream\\cods\\files\\";
 		
-
+		FileOutputStream outputStream = new FileOutputStream(filePath.concat("write.txt"), true); //2º step
+		
+		outputStream.write(100);
+		System.out.println("data saved");
+		
+		outputStream.close();
 	}
 
 }
